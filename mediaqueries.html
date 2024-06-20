@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .main {
+        font-weight: 400;
+        background-color: yellow;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width:375px) {
+        .main {
+            background-color: red;
+            color: white;
+        }
+    }
+
+    @media screen and (min-width:375px) and (max-width:425px) {
+        .main {
+            background-color: green;
+            color: white;
+        }
+    }
+
+    @media screen and (min-width:425px) and (max-width:768px) {
+        .main {
+            background-color: blue;
+            color: white;
+        }
+    }
+</style>
+
+<body>
+    <div class="main">Responsive Layout</div>
+
+</body>
+
+</html>
